@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kor">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +26,9 @@
   <hr>
   <p style="text-align: center;font-size: 20px; margin-top: -5px;">나의 셀카</p>
   <div>
-    <img src="/images/1.png" alt="" style="">
-    <img src="/images/2.png" alt="" style="height: 150px;">
-    <img src="/images/3.png" alt="" style="height: 250px;">
+    <img src="/03HTML/images/1.png" alt="" style="height: 200px;">
+    <img src="/03HTML/images/2.png" alt="" style="height: 150px;">
+    <img src="/03HTML/images/3.png" alt="" style="height: 250px;">
   </div>
 
   <br><hr><br>
@@ -128,7 +128,7 @@
 
   <h2>과일 수입</h2>
   <hr>
-  <table>
+  <table style="border: 1px solid black;">
     <caption>과일 수입 표</caption>
     <thead>
       <tr>
@@ -139,9 +139,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><img src="/images/apple.png" alt="" style="height: 100px;"></td>
-        <td><img src="/images/banana.png" alt="" style="height: 100px;"></td>
-        <td><img src="/images/mango.png" alt="" style="height: 100px;"></td>
+        <td><img src="/03HTML/images/apple.png" alt="" style="height: 100px;"></td>
+        <td><img src="/03HTML/images/banana.png" alt="" style="height: 100px;"></td>
+        <td><img src="/03HTML/images/mango.png" alt="" style="height: 100px;"></td>
       </tr>
     </tbody>
     <tfoot>
@@ -211,8 +211,64 @@
       <br>
       투명도(0~100):
       <input type="range" name="invisible" min="0" max="100" step="10">
-
     </form>
   </fieldset>
+  
+  <br><hr><br>
+
+  <style>
+    .domi .room {
+      font-weight: bold;
+      text-align: center;
+    }
+    .domi th,td {
+      padding: 1px 5px;
+    }
+  </style>
+  <h2 style="margin-bottom: -20px;">객실 소개</h2>
+  <h4 style="margin-bottom: 0px;">¤ 도미토리</h4>
+  <table class="domi">
+    <colgroup style="width: 150px;">
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <caption>요안도라 객실</caption>
+    <thead style="background-color: rgb(200, 200, 200);">
+      <tr>
+        <th>방 이름</th>
+        <th>대상</th>
+        <th>크기</th>
+        <th>가격</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="room">유채방</td>
+        <td>여성 도미토리</td>
+        <td rowspan="3">4인실</td>
+        <td rowspan="4">1인 20,000원</td>
+      </tr>
+      <tr>
+        <td class="room" rowspan="2">동백방</td>
+        <td>동성 도미토리</td>
+      </tr>
+      <tr>
+        <td>가족1팀</td>
+      </tr>
+      <tr>
+        <td class="room">천혜양방</td>
+        <td>-</td>
+        <td>2인실</td>
+      </tr>
+    </tbody>
+    <tfoot style="background-color: rgb(200, 200, 200);">
+      <tr>
+        <th colspan="4">바깥채 전체를 렌트합니다</th>
+      </tr>
+    </tfoot>
+  </table>
+
 </body>
 </html>
